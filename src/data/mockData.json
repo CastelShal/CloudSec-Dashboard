@@ -1,0 +1,258 @@
+{
+    "sections": [
+        {
+            "title": "CSPM Dashboard",
+            "widgets": [
+                {
+                    "widgetId": "cspm-compliance-status",
+                    "type": "DonutChart",
+                    "title": "Compliance Status",
+                    "data": {
+                        "labels": [
+                            "Compliant",
+                            "Non-Compliant"
+                        ],
+                        "datasets": [
+                            {
+                                "data": [
+                                    70,
+                                    30
+                                ],
+                                "backgroundColor": [
+                                    "rgb(20, 40, 180)",
+                                    "rgb(186, 186, 186)"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "widgetId": "cspm-policy-violations",
+                    "type": "LineChart",
+                    "title": "Policy Violations Over Time",
+                    "data": {
+                        "labels": [
+                            "January",
+                            "February",
+                            "March",
+                            "April",
+                            "May",
+                            "June"
+                        ],
+                        "datasets": [
+                            {
+                                "label": "Violations",
+                                "data": [
+                                    10,
+                                    20,
+                                    15,
+                                    30,
+                                    25,
+                                    40
+                                ],
+                                "fill": false,
+                                "borderColor": "rgb(20, 40, 180)"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "widgetId": "cspm-resource-distribution",
+                    "type": "DonutChart",
+                    "title": "Resource Distribution",
+                    "data": {
+                        "labels": [
+                            "EC2",
+                            "S3",
+                            "RDS",
+                            "Lambda"
+                        ],
+                        "datasets": [
+                            {
+                                "data": [
+                                    40,
+                                    30,
+                                    20,
+                                    10
+                                ],
+                                "backgroundColor": [
+                                    "rgb(255, 0, 20)",
+                                    "rgb(54, 162, 235)",
+                                    "rgb(255, 206, 86)",
+                                    "rgb(20, 40, 180)"
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "title": "CWPP Dashboard",
+            "widgets": [
+                {
+                    "widgetId": "cwpp-ports-status",
+                    "type": "DonutChart",
+                    "title": "Ports Status",
+                    "data": {
+                        "labels": [
+                            "Open Ports",
+                            "Closed Ports"
+                        ],
+                        "datasets": [
+                            {
+                                "data": [ 50, 70 ],
+                                "backgroundColor": [
+                                    "rgb(255, 0, 20)",
+                                    "rgb(186, 186, 186)"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "widgetId": "cwpp-traffic-time",
+                    "type": "LineChart",
+                    "title": "Traffic Over Time",
+                    "data": {
+                        "labels": [
+                            "January",
+                            "February",
+                            "March",
+                            "April",
+                            "May",
+                            "June"
+                        ],
+                        "datasets": [
+                            {
+                                "label": "Traffic",
+                                "data": [
+                                    100,
+                                    200,
+                                    150,
+                                    300,
+                                    250,
+                                    400
+                                ],
+                                "fill": false,
+                                "borderColor": "rgb(20, 40, 180)"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "widgetId": "cwpp-cpu-usage",
+                    "type": "DonutChart",
+                    "title": "CPU Usage",
+                    "data": {
+                        "labels": [
+                            "Used",
+                            "Free"
+                        ],
+                        "datasets": [
+                            {
+                                "data": [
+                                    70,
+                                    30
+                                ],
+                                "backgroundColor": [
+                                    "rgb(20, 40, 180)",
+                                    "rgb(186, 186, 186)"
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Registry Dashboard",
+            "widgets": [
+                {
+                    "widgetId": "registry-vulnerabilities",
+                    "type": "DonutChart",
+                    "title": "Image Vulnerabilities",
+                    "data": {
+                        "labels": [
+                            "Critical",
+                            "High",
+                            "Medium",
+                            "Low"
+                        ],
+                        "datasets": [
+                            {
+                                "data": [
+                                    5,
+                                    15,
+                                    25,
+                                    55
+                                ],
+                                "backgroundColor": [
+                                    "rgb(255, 0, 20)",
+                                    "rgb(255, 159, 64)",
+                                    "rgb(255, 205, 86)",
+                                    "rgb(20, 40, 180)"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "widgetId": "registry-image-count",
+                    "type": "DonutChart",
+                    "title": "Image Count by Status",
+                    "data": {
+                        "labels": [
+                            "Active",
+                            "Deprecated",
+                            "Stale"
+                        ],
+                        "datasets": [
+                            {
+                                "data": [
+                                    60,
+                                    25,
+                                    15
+                                ],
+                                "backgroundColor": [
+                                    "rgb(54, 162, 235)",
+                                    "rgb(255, 206, 86)",
+                                    "rgb(186, 186, 186)"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "widgetId": "registry-scan-frequency",
+                    "type": "LineChart",
+                    "title": "Scan Frequency Over Time",
+                    "data": {
+                        "labels": [
+                            "January",
+                            "February",
+                            "March",
+                            "April",
+                            "May",
+                            "June"
+                        ],
+                        "datasets": [
+                            {
+                                "label": "Scans",
+                                "data": [
+                                    12,
+                                    18,
+                                    14,
+                                    20,
+                                    22,
+                                    25
+                                ],
+                                "fill": false,
+                                "borderColor": "rgb(20, 40, 180)"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+]}
